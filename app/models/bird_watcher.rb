@@ -1,0 +1,2 @@
+class BirdWatcher < ApplicationRecord
+end

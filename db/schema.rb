@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_02_132944) do
+ActiveRecord::Schema.define(version: 2022_09_28_110951) do
+
+  create_table "bird_watchers", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "profile_image"
+    t.string "favoirite_species"
+    t.string "admin"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "birds", force: :cascade do |t|
     t.string "name"
